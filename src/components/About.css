@@ -1,0 +1,102 @@
+/* About.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+  }
+  
+  .about-container {
+    padding: 20px;
+  }
+  
+  .header-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .header-image {
+    width: 50%;
+    height: 70vh;
+    margin-right: 20px;
+    border-radius: 10%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-title {
+    font-size: 2em;
+    color: #333;
+  }
+  
+  .section-title {
+    font-size: 1.8em;
+    color: #0073e6;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .section-title:hover {
+    color: #005bb5;
+  }
+  
+  .section-content {
+    margin-bottom: 15px;
+    color: #555;
+  }
+  
+  .section-list {
+    padding-left: 20px;
+    list-style-type: square;
+  }
+  
+  .list-item {
+    color: #333;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .list-item:hover {
+    color: #0073e6;
+  }
+  
+  .let-work-together {
+    font-weight: bold;
+    color: #222;
+  }
+  
+  section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  /* Responsive Design */
+@media (max-width: 768px) {
+  
+    .header-section {
+        display: block;
+        align-items: center;
+        margin-bottom: 40px;
+        text-align: center;
+      }
+    .header-image {
+        width: 100%;
+        height: 250px;
+        margin-right: 20px;
+        border-radius: 10%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+}

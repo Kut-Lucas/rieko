@@ -1,0 +1,134 @@
+/* Main container styles */
+.partners-container {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  /* Title styles */
+  .partners-title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #333;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .partners-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #4a90e2;
+  }
+  
+  /* Grid layout */
+  .partners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+  }
+  
+  /* Partner card styles */
+  .partner-link {
+    text-decoration: none;
+  }
+  
+  .partner-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .partner-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Logo styles */
+  .partner-logo {
+    max-width: 100%;
+    height: auto;
+    max-height: 80px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+    transition: opacity 0.3s ease;
+  }
+  
+  .partner-logo.loading {
+    opacity: 0;
+  }
+  
+  .partner-logo.loaded {
+    opacity: 1;
+  }
+  
+  /* Name styles */
+  .partner-name {
+    font-size: 1.1rem;
+    color: #444;
+    margin-top: auto;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .partners-grid {
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .partners-grid {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 1.2rem;
+    }
+    
+    .partner-card {
+      padding: 1rem;
+    }
+    
+    .partner-logo {
+      max-height: 60px;
+    }
+    
+    .partner-name {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .partners-container {
+      padding: 2rem 1rem;
+    }
+    
+    .partners-title {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+    
+    .partners-grid {
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 1rem;
+    }
+    
+    .partner-logo {
+      max-height: 50px;
+    }
+    
+    .partner-name {
+      font-size: 0.9rem;
+    }
+  }

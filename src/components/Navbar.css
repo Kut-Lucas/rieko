@@ -1,0 +1,273 @@
+/* .top-navbar {
+    background-color: #4335A7;
+    color: white;
+    padding: 1px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.top-navbar-left {
+    padding-right: 15px;
+}
+
+.main-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    flex: 1;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+    justify-content: center;
+}
+
+.nav-links a {
+    text-decoration: none; 
+    color: blue; 
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a.active {
+    color: orange; 
+    font-weight: bold; 
+}
+
+.nav-links a:hover {
+    color: orange;
+    text-decoration: none;
+}
+
+.nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 20px;
+    background: none;
+    border: none;
+}
+
+.close-menu {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.social-icons a {
+    color: rgb(7, 67, 163);
+    font-size: 20px;
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px);
+    color: #0077b5;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .social-icons {
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .close-menu {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 30px;
+        background: none;
+        border: none;
+        color: black;
+        cursor: pointer;
+    }
+} */
+
+
+/* Top Navbar */
+.navbar-top {
+    background-color: #4335A7;
+    color: white;
+    padding: 1px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.navbar-top-left {
+    padding-right: 15px;
+}
+
+/* Main Navbar */
+.navbar-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar-logo {
+    font-size: 20px;
+    font-weight: bold;
+    flex: 1;
+}
+
+.navbar-logo img {
+    height: 50px;
+    width: auto;
+}
+
+/* Navigation Links */
+.navbar-links {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+    justify-content: center;
+}
+
+.navbar-links a {
+    text-decoration: none; 
+    color: blue; /* Default color */
+    padding: 10px;
+    transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+.navbar-links a.active {
+    color: orange; /* Active state is orange */
+    font-weight: bold; /* Makes the active link visually distinct */
+}
+
+.navbar-links a:hover {
+    color: orange; /* Remains orange on hover */
+    text-decoration: none;
+}
+
+/* Hamburger Button */
+.navbar-toggle {
+    display: none; /* Hidden by default */
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Social Icons */
+.navbar-social-icons {
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.navbar-social-icons a {
+    color: rgb(7, 67, 163);
+    font-size: 20px;
+}
+
+.navbar-social-icons a:hover {
+    transform: translateY(-5px);
+    color: #0077b5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-toggle {
+        display: block; /* Always visible on small devices */
+    }
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px; /* Adjust based on your navbar height */
+        left: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 1;
+        border-top: 1px solid #ddd;
+        padding: 10px;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .navbar-social-icons {
+        display: none;
+    }
+}
+
+.logout-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    width: 0px;
+    padding: 4px 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  
+  .logout-button:hover {
+    background-color: #c82333;
+  }

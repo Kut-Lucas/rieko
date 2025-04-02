@@ -1,0 +1,115 @@
+
+   .training-details-container {
+    width: 96%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    padding: 20px; /* Reduced padding for smaller screens */
+  }
+  
+  .training-details-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    width: 100%; /* Full width for smaller screens */
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  .training-details-card img {
+    max-width: 100%;
+    height: 60vh;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .training-details-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .training-details-info h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .training-details-info p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .training-details-info p strong {
+    color: #333;
+  }
+  
+  .training-details-info .training-date {
+    color: #888;
+    display: flex;
+    align-items: center;
+  }
+  
+  .training-details-info .training-date svg {
+    margin-right: 8px;
+  }
+  
+  .training-details-info .read-more {
+    color: #3498db;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .training-details-info .read-more:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design for Small Screens */
+  @media (max-width: 768px) {
+    .training-details-container {
+      padding: 10px; /* Further reduce padding for small screens */
+    }
+  
+    .training-details-card {
+      margin: 10px;
+      padding: 15px;
+    }
+  
+    .training-details-info h2 {
+      font-size: 1.5rem; /* Smaller font size for headings */
+    }
+  
+    .training-details-info p {
+      font-size: 1rem; /* Smaller font size for text */
+    }
+  
+    .training-details-card img {
+      height: auto; /* Ensure image scales properly */
+    }
+  }
+  
+  /* Responsive Design for Very Small Screens */
+  @media (max-width: 480px) {
+    .training-details-container {
+      width: 80%;
+      padding: 4px; /* Minimal padding for very small screens */
+    }
+  
+    .training-details-card {
+      margin: 4px;
+      padding: 8px;
+    }
+  
+    .training-details-info h2 {
+      font-size: 1.2rem; /* Even smaller font size for headings */
+    }
+  
+    .training-details-info p {
+      font-size: 0.9rem; /* Smaller font size for text */
+    }
+  }

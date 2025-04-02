@@ -1,0 +1,51 @@
+/* Home Page Styles */
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+  text-align: center;
+}
+
+.home-content {
+  max-width: 600px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.home-title {
+  font-size: 48px;
+  font-weight: bold;
+  color: #1877f2; /* Facebook blue for a modern look */
+  margin-bottom: 10px;
+}
+
+.home-subheading {
+  font-size: 20px;
+  color: #1c1e21;
+  margin-bottom: 30px;
+}
+
+.home-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.home-link {
+  padding: 12px 24px;
+  background-color: #1877f2;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.home-link:hover {
+  background-color: #166fe5; /* Slightly darker blue on hover */
+}
